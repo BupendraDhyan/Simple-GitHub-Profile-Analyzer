@@ -11,3 +11,5 @@ def analyze_github_profile(username):
         name = user_data["name"]
         bio = user_data["bio"]
         followers = user_data["followers"]
+        following = user_data["following"]
+        public_repos = user_data["public_repos"]
