@@ -13,3 +13,7 @@ def analyze_github_profile(username):
         followers = user_data["followers"]
         following = user_data["following"]
         public_repos = user_data["public_repos"]
+
+         # Print analyzed profile information
+        print(f"Username: {username}")
+        print(f"Name: {name}")
