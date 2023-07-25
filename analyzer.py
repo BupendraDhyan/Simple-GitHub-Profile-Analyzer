@@ -19,3 +19,5 @@ def analyze_github_profile(username):
         print(f"Name: {name}")
         print(f"Bio: {bio}")
         print(f"Followers: {followers}")
+        print(f"Following: {following}")
+        print(f"Public Repositories: {public_repos}")
