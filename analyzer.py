@@ -4,7 +4,7 @@ def analyze_github_profile(username):
     # Make a GET request to the GitHub API to fetch user information
  response = requests.get(f"https://api.github.com/users/{username}")
     
-    if response.status_code == 200:
+ if response.status_code == 200:
         user_data = response.json()
 
         # Exact relevant information from the response
@@ -21,3 +21,9 @@ def analyze_github_profile(username):
         print(f"Followers: {followers}")
         print(f"Following: {following}")
         print(f"Public Repositories: {public_repos}")
+ else:
+        print("Error: Unable to fetch user information.")
+
+# Provide the GitHub username for analysis
+username = input("Enter a GitHub username: ")
+analyze_github_profile(username)
